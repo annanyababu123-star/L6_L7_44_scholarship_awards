@@ -17,7 +17,7 @@ Missing lines: 6, 8, 11, 15-23, 28, 30, 35-45. Untested paths: the unknown-categ
 
 ## 2. Code (line) coverage
 
-`CodeCoverageTest_scholarship_awards.py` has 14 tests. Each was added to execute a specific missed line:
+`CodeCoverageTest_AM045_application.py` has 14 tests. Each was added to execute a specific missed line:
 
 - Both `ValueError` raises (lines 6, 8).
 - Renewal cutoff reduction (line 11) and both income rates (lines 16, 18).
@@ -29,7 +29,7 @@ Missing lines: 6, 8, 11, 15-23, 28, 30, 35-45. Untested paths: the unknown-categ
 
 ## 3. Branch coverage
 
-`BranchCoverageTest_scholarship_awards.py` has 27 tests. Every decision is exercised for both True and False, plus boundary values:
+`BranchCoverageTest_AM045_application.py` has 27 tests. Every decision is exercised for both True and False, plus boundary values:
 
 - `is_renewal and category != "sports"`: renewal non-sports (True), renewal sports (False), non-renewal (False).
 - `above > 15` with `above == 15` as the boundary, and the inner `income_level == "low"` check on both sides.
